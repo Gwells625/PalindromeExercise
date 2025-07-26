@@ -9,7 +9,11 @@ namespace PalindromeExerciseTests
         
             [Theory]
             [InlineData("kayak", true)]
+            [InlineData("civic", true)]
+            [InlineData("madam", true)]
             [InlineData("Goodbye", false)]
+            [InlineData("ham", false)]
+            [InlineData("name", false)]
             public void TestPalindrome(string word, bool expected)
             {
                 //Arrange - 
